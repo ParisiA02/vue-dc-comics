@@ -118,6 +118,7 @@ export default {
                 height: 100%;
                 float: right;
                 background-position: center;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-image: url("../assets/dc-logo-bg.png");
             }

@@ -17,10 +17,9 @@ export default {
   name: 'App',
   components: {
     Header,
-    Jumbotron,
     Footer,
-    Main
-    
+    Main,
+    Jumbotron
   }
 }
 </script>
