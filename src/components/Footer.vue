@@ -156,12 +156,13 @@ export default {
                         font-weight: bold;
                         color: #0282F9;
                     }
+
                     ul{
                         margin-left: 30px;
+                        display: flex;
 
                         li{
                             list-style-type: none;
-                            display: inline;
                             margin-right: 20px;
                         }
                     }
