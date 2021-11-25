@@ -1,8 +1,12 @@
 <template>
     <div class="container">
         <div class="books-container">
+            <div class="current-series">
+                CURRENT SERIES
+            </div>
             <Book v-for="book,i in bookList" :key="i" :details="book"/>   
         </div>
+        <button class="btn main-btn">LOAD MORE</button>
     </div>
 </template>
 
@@ -99,12 +103,38 @@ export default {
 <style scoped lang="scss">
     .container{
         background-color: #1C1C1C;
-        
+        position: relative;
+        text-align: center;
+
+        .current-series{
+            width: 200px;
+            height: 40px;
+            background-color: #0282F9;
+            position: absolute;
+            top: -30px;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            font-weight: bold;
+        }
+
         .books-container{
             width: 60%;
-            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        .btn{
+            width: 100px;
+            height: 25px;
+            border: none;
+            background-color: #0282F9;
+            color: white;
+            margin-bottom: 20px;
         }
     }
 </style>
